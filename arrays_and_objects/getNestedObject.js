@@ -7,7 +7,7 @@ function returnNestedObject(arr) {
         let firstPart=splittedData[0].split(" ");
         let age=parseInt(splittedData[1]);
         returnArr[i]={
-            [firstPart[0]]: {
+            [firstPart[0].toLowerCase()]: {
                 "second-name": firstPart[1],
                 age
             }
